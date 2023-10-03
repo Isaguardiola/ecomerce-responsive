@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #EBD8A7;
+    font-family: 'Croissant One', cursive;
+}
+
+html li {
+    margin-left: 5px;
+    font-family: 'Domine', serif;
+
+}
+
+#carrito {
+    margin-left: 5pc;
+}
+
+body {
+    padding: 0 150px;
+}
+
+main {
+    padding: 0 150px;
+    display: flex;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    align-items: center;
+
+}
+
+hr {
+    margin-bottom: 80px;
+    border-color: #becf97;
+
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.prod {
+    font-size: 20px;
+
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.cont {
+    font-size: 20px;
+
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 90px;
+
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.phone-icon {
+    display: none;
+}
+
+/* Estilos comunes a todas las tarjetas */
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: -9px 9px 2px rgba(71, 48, 26, 0.3);
+    transition: transform 0.2s cubic-bezier(0.2, 0.55, 0.10, 2);
+    height: 100%;
+    margin: 0 auto;
+    /* Centrar la tarjeta horizontalmente */
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    /* Altura fija para todas las imágenes */
+    width: 300px;
+    /* Ancho fijo para todas las imágenes */
+    overflow: hidden;
+    /* No se dibujan barras al a cortar el contenido */
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajusta la imagen para que cubra todo el contenedor sin distorsionarla */
+}
+
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.costo {
+    font-family: 'Domine', serif;
+}
+
+
+
+@media(max-width:500px) {
+    .phone-icon {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .card {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+}
