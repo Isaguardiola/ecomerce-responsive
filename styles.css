@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #EBD8A7;
+    font-family: 'Croissant One', cursive;
+    overflow-y: hidden;
+}
+
+html li {
+    font-family: 'Domine', serif;
+    margin-left: 5px;
+
+}
+
+#carrito {
+    margin-left: 5pc;
+}
+
+body {
+    padding: 0 150px;
+}
+
+main {
+    padding: 0 150px;
+    display: flex;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    align-items: center;
+
+}
+
+hr {
+    margin-bottom: 10px;
+    border-color: #becf97;
+
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.prod {
+    font-size: 20px;
+
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.cont {
+    font-size: 20px;
+
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 90px;
+
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.anuncio {
+    display: flex;
+    width: 100%;
+
+
+}
+
+#texto {
+    display: flex;
+    color: #355C27;
+    height: 93px;
+    top: 168px;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 109px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    z-index: 4;
+    position: relative;
+    width: 90pc;
+}
+
+.discover {
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    width: 213px;
+    height: 32px;
+    top: 25pc;
+    left: 31px;
+    gap: 5px;
+
+}
+#link{
+     display: flex;
+        align-items: center;
+}
+
+
+
+.fondo {
+    left: 40%;
+    width: 40%;
+    /* Ancho fijo para la imagen */
+    position: absolute;
+}
+
+.phone-icon {
+    display: none;
+}
+
+.title {
+    color: #355C27;
+    display: none;
+}
+
+/* desde aqui empieza la parte responsive */
+
+@media(max-width:500px) {
+    .phone-icon {
+        display: flex;
+    }
+    
+    nav {
+        display: none;
+    }
+ 
+    .title {
+        display: flex; /*para hacerlo visible*/
+        margin-top: 95%;
+        margin-left: 3%;
+    }
+
+    #texto {
+        display: none;
+    }
+
+    .fondo {
+        width: 90%;
+        position: absolute;
+        left: 10%;
+    }
+    #link{
+        display: flex;
+        align-items: center;
+        position: absolute;
+       bottom: 10pc;
+    right: 12pc;
+
+    }
+}
